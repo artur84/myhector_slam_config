@@ -1,0 +1,10 @@
+ 
+<!-- This file publishes a Static Transformation 
+describing the pose of a given frame "my_frame" w.r.t a parent frame "base_link"-->
+<launch> 
+<!--
+ node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="x[m] y z yaw[rad] pitch  roll link1_parent link1 period_ms"/
+--> 
+<node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0  0  0.5    1.57    0      0    base_link    my_link   100"/> 
+
+</launch> 
