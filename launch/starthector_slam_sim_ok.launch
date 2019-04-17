@@ -19,4 +19,7 @@ for example the two_wheels_description simulation -->
     <arg name="map_file_path" value="$(arg geotiff_map_file_path)"/>
   </include>
 
+  <!-- launches the keyboard teleoperation node to drive the two_wheels_descritption robot around -->
+  <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop_twist_keyboard" output="screen"/>
+
 </launch>
