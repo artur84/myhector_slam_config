@@ -14,10 +14,10 @@ for example the two_wheels_description simulation -->
 
   <include file="$(find myhector_slam_config)/launch/mapping_default_ok.launch"/>
 
-  <include file="$(find hector_geotiff)/launch/geotiff_mapper.launch">
+  <!--include file="$(find hector_geotiff)/launch/geotiff_mapper.launch">
     <arg name="trajectory_source_frame_name" value="scanmatcher_frame"/>
     <arg name="map_file_path" value="$(arg geotiff_map_file_path)"/>
-  </include>
+  </include-->
 
   <!-- launches the keyboard teleoperation node to drive the two_wheels_descritption robot around -->
   <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop_twist_keyboard" output="screen"/>
